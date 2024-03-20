@@ -1,0 +1,148 @@
+body {
+    background-color: #22577A;
+    font-family: "Roboto Mono", monospace;
+    color: #fff;
+}
+
+.butCont {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    font-family: "Roboto Mono", monospace;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 2px solid #38A3A5;
+    background-color: #22577A;
+    color: #fff;
+    transition: 0.25s ;
+}
+
+button:hover {
+    background-color: #57CC99;
+    color: #000;
+    border-color: #C7F9CC;
+    box-shadow: 0 0 10px #57CC99;
+}
+
+div {
+    margin: 15px;
+    font-size: 25px;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#Name {
+    position: relative;
+    padding: 13px;
+    border-radius: 30px;
+    border: 2px solid #C7F9CC;
+    z-index: 1;
+    overflow: hidden;
+    transition: box-shadow 0.4s;
+}
+
+#Name:hover {
+    color: #22577A;
+    box-shadow: 0 0 15px #57CC99;
+}
+
+#Name:hover::after {
+    content: '';
+    position: absolute;
+    transform: translateX(-100vw);
+    left: 0px;
+    top: 0;
+    width: 115vw;
+    border-radius: 40px;
+    height: 60px;
+    background-color: #C7F9CC;
+    z-index: -1;
+    transition: 2s;
+    animation: expand 1s ease-in-out forwards;
+}
+
+
+#Name::after:hover {
+    width: 20px;
+}
+
+#Name>Span {
+    color: #57CC99;
+}
+
+.favoriteGame>span {
+    color: #80ED99;
+}
+
+#Site {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #22577A;
+    justify-content: center;
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+
+#Site::after {
+    content: '';
+    position: absolute;
+    width: 286px;
+    height: 56px;
+    background-image: linear-gradient(to right, #80ED99 , #38A3A5);
+    border-radius: 27px;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+#Site:hover::after {
+    background-image: linear-gradient(to left, #80ED99 , #38A3A5);
+    width: 290px;
+    height: 60px;
+    filter: blur(5px);
+}
+
+#age {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    justify-content: center;
+    height: 50px;
+    overflow: hidden;
+}
+
+#age::after {
+    content: '';
+    border-top: 4px solid #57CC99;
+    position: absolute;
+    transform: translateY(49px);
+    width: 290px;
+    height: 50px;
+    background-color: #C7F9CC;
+    z-index: -1;
+}
+
+#age:hover::after {
+    transition: 0.4s;
+    transform: translateY(2px);
+}
+
+#age:hover {
+    transition: 0.4s;
+    color: #000;
+    font-weight: 600;
+}
+
+@keyframes expand {
+    to {
+        transform: translateX(-5vw);
+    }
+}
