@@ -9,6 +9,9 @@ header {
     gap: 20px;
 }
 
+.nike {
+    width: 40px;
+}
 
 #search {
     display: flex;
@@ -18,10 +21,15 @@ header {
     height: 35px;
     background-color: #ddd;
     border-radius: 35px;
+    transition: 0.1s;
 }
 
 #search > i {
     margin-left: 10px;
+}
+
+#search:hover {
+    border: 3px solid black;
 }
 
 .carousel-item > img {
@@ -31,4 +39,13 @@ header {
 
 .name {
     text-align: center;
+}
+
+.selecElem {
+    transition: 0.1s;
+}
+
+.selecElem:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
 }
