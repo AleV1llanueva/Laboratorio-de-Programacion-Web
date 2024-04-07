@@ -1,0 +1,160 @@
+body {
+    font-family: "nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+#headerInit {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    justify-content: space-between;
+}
+
+#headerRight {
+    display: flex;
+    margin: 5px;
+    width: 300px;
+    justify-content: space-around;
+}
+
+#headerLeft {
+    display: flex;
+    margin: 5px;
+    width: 400px;
+    justify-content: space-around;
+}
+
+#headerSec {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+#headerSec > div {
+    margin: 5px 10px;
+}
+
+#adOne {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #dc7d4a;
+    color: #fff;
+    font-size: 14px;
+}
+
+#title {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;   
+}
+
+#title > div {
+    margin: 20px;
+}
+
+#title > .icon {
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+}
+
+#title > .titlePrinc {
+    font-size: 70px;
+    color: #111;
+    font-weight: bold;
+}
+
+#title > .description {
+    font-size: 20px;
+    color: #555;
+}
+
+#themeComp {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    gap: 100px;
+}
+
+#themeComp > div {
+    width: 250px;
+}
+
+#themeComp > div > i {
+    color: #444;
+}
+
+.titleThemeComp {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #444;
+    font-weight: bold;
+}
+
+.descThemeComp {
+    margin-top: 7px;
+    font-size: 12px;
+    color: #777;
+}
+
+#properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    width: 50vw;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.prop {
+    display: flex;
+    width: 250px;
+}
+
+.prop > i {
+    font-size: 50px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.titleProperties {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+    font-weight: bold;
+}
+
+.descProperties {
+    font-size: 12px;
+    color: #777;
+}
+
+footer {
+    display: flex;
+    margin-top: 30px;
+    background-color: #444;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
